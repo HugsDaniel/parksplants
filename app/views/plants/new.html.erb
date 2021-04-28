@@ -1,0 +1,7 @@
+<%= simple_form_for [@garden, @plant] do |f| %>
+  <%= f.input :name %>
+  <%= f.input :photo_url %>
+  <%= f.input :variety, collection: %w(flower succulent ficus tree vegetable cactus) %>
+
+  <%= f.submit "Créer", class: "btn btn-success" %>
+<% end %>
